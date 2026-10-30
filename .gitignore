@@ -1,0 +1,7 @@
+# Private case files: never commit. Public filings are copied into src/docs/ when needed.
+/Lawsuit/
+
+node_modules/
+dist/
+dist-dev/
+.parcel-cache/
