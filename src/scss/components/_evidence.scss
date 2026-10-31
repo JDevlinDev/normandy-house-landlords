@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+// Screenshot from the record, with a caption crediting the exhibit
+.evidence {
+  border: 1px solid var(--theme-border);
+  background-color: var(--theme-surface-alt);
+
+  &__img {
+    width: 100%;
+    margin-inline: auto;
+
+    &--phone {
+      max-width: rem(300);
+    }
+  }
+
+  &__caption {
+    padding: rem(12) rem(16);
+    border-top: 1px solid var(--theme-border);
+    font-size: rem(14);
+    color: var(--theme-muted);
+  }
+}
