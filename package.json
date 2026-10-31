@@ -5,7 +5,7 @@
   "description": "Normandy House Landlords: what Normandy House, Inc. reports to the IRS, and what its residents sign",
   "scripts": {
     "start": "npx parcel --host 0.0.0.0 --port 4321 --dist-dir dist-dev",
-    "build": "npm run cleanup && npx parcel build --public-url ./",
+    "build": "npm run cleanup && npx parcel build --public-url ./ && cp -r src/static/. dist/",
     "push-gh": "npm run build && gh-pages --dist dist --branch gh-pages --cname www.normandyhouselandlords.org --nojekyll --message \"Deploy $(git rev-parse --short HEAD)\"",
     "format": "prettier --write src",
     "cleanup": "rm -rf dist dist-dev .parcel-cache"
