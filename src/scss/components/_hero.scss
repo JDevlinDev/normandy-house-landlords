@@ -60,6 +60,15 @@
     color: var(--theme-on-dark-heading);
   }
 
+  // Small lead-in line above the headline number
+  &__kicker {
+    display: block;
+    margin-bottom: rem(8);
+    font-size: clamp(rem(20), 2.5vw, rem(26));
+    letter-spacing: 0.04em;
+    color: var(--theme-on-dark);
+  }
+
   // The headline number, set larger than the words around it
   &__figure {
     display: block;
