@@ -4,6 +4,10 @@ A public site about the landlords behind Normandy House sober living in Des Plai
 
 **This repo is public.** Everything committed here, including this file, can be read by the defendants. Keep case strategy, personal details and anything unfiled out of it.
 
+## Theme
+
+The site's message follows the 2026-10-31 press release: Normandy House's own Form 990s report $2,463,339 in resident payments as "contributions" for 2021–2025, and residents must sign a form calling them "guests" with no renters' rights. Lead with the money; the threatened lockout after the City complaints is the story that shows what the label is for. The release and notes on adapting it are private, in `Lawsuit/Media/`.
+
 ## The `Lawsuit/` folder
 
 - `Lawsuit/` is gitignored and must stay that way. It holds the private case file: drafts, evidence, correspondence, and its own `Lawsuit/CLAUDE.md` with case facts, law and drafting rules. Read that file before working on anything that touches the case.
