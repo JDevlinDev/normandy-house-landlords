@@ -1,0 +1,36 @@
+{
+  "name": "normandy-house-landlords",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "description": "Normandy House Landlords: what Normandy House, Inc. reports to the IRS, and what its residents sign",
+  "scripts": {
+    "start": "npx parcel --host 0.0.0.0 --port 4321 --dist-dir dist-dev",
+    "build": "npm run cleanup && npx parcel build --public-url ./",
+    "push-gh": "npm run build && gh-pages --dist dist --branch gh-pages --message \"Deploy $(git rev-parse --short HEAD)\"",
+    "format": "prettier --write src",
+    "cleanup": "rm -rf dist dist-dev .parcel-cache"
+  },
+  "keywords": [
+    "web development",
+    "frontend mentor",
+    "css",
+    "sass",
+    "parcel",
+    "github pages"
+  ],
+  "author": "Jason Sherrick",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.4",
+    "prettier": "^3.8.4",
+    "svgo": "^3.3.5"
+  },
+  "allowScripts": {
+    "@parcel/watcher": true,
+    "@swc/core": true,
+    "lmdb": true,
+    "msgpackr-extract": true
+  }
+}

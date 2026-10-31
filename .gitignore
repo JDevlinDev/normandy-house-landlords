@@ -5,3 +5,9 @@ node_modules/
 dist/
 dist-dev/
 .parcel-cache/
+
+# From the starter pack
+.DS_Store
+*.zip
+.vscode
+*.code-workspace
