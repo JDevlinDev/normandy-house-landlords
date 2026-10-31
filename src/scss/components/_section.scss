@@ -41,6 +41,18 @@
     text-transform: uppercase;
   }
 
+  // Second line directly under the section title
+  &__subhead {
+    margin-top: rem(-8);
+    margin-bottom: rem(16);
+    font-family: $font-heading;
+    font-size: clamp(rem(22), 3vw, rem(28));
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--theme-accent);
+  }
+
   &--dark &__title {
     color: var(--theme-on-dark-heading);
   }
