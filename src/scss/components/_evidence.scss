@@ -20,4 +20,28 @@
     font-size: rem(14);
     color: var(--theme-muted);
   }
+
+  &__title {
+    display: block;
+    margin-bottom: rem(4);
+    font-family: $font-heading;
+    font-size: rem(22);
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: var(--theme-heading);
+  }
+
+  // Featured in the hero: context first, then the screenshot
+  &--lead {
+    border-top: 6px solid var(--theme-accent);
+  }
+
+  &--lead &__caption {
+    padding: rem(16) rem(20);
+    border-top: none;
+    border-bottom: 1px solid var(--theme-border);
+    font-size: rem(15);
+    color: var(--theme-text);
+  }
 }
