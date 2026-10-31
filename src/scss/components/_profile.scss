@@ -1,0 +1,70 @@
+@use "../abstracts" as *;
+
+// One defendant in the "Meet the landlords" section
+.profile {
+  display: flex;
+  flex-direction: column;
+  padding: rem(28) rem(24);
+  border: 1px solid var(--theme-border);
+  border-top: 4px solid var(--theme-accent);
+  background-color: var(--theme-surface);
+
+  @include breakpoints("md") {
+    padding: rem(32);
+  }
+
+  &__type {
+    margin-bottom: rem(8);
+    font-family: $font-heading;
+    font-size: rem(14);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--theme-muted);
+  }
+
+  &__name {
+    margin-bottom: rem(8);
+    font-size: rem(30);
+  }
+
+  &__role {
+    margin-bottom: rem(20);
+    font-weight: 600;
+  }
+
+  &__facts {
+    display: grid;
+    gap: rem(12);
+    margin-bottom: rem(24);
+  }
+
+  &__fact {
+    padding-left: rem(16);
+    border-left: 3px solid var(--theme-border);
+  }
+
+  &__case {
+    margin-top: auto;
+    padding-top: rem(20);
+    border-top: 1px solid var(--theme-border);
+    font-size: rem(16);
+  }
+
+  &__case-label {
+    display: block;
+    margin-bottom: rem(4);
+    font-family: $font-heading;
+    font-size: rem(14);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--theme-accent);
+  }
+
+  a {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+}

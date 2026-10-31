@@ -12,6 +12,13 @@
   @include breakpoints("lg") {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  // Two across at every width above mobile, for the landlord profiles
+  &--pairs {
+    @include breakpoints("lg") {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 // Figure beside its explanation, in the money section
