@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.site-footer {
+  padding-block: rem(48);
+  border-top: 4px solid var(--theme-accent);
+  background-color: var(--theme-dark);
+  font-size: rem(15);
+  color: var(--theme-on-dark);
+
+  &__title {
+    margin-bottom: rem(12);
+    font-size: rem(22);
+    text-transform: uppercase;
+    color: var(--theme-on-dark-heading);
+  }
+
+  &__text {
+    max-width: 50rem;
+
+    & + & {
+      margin-top: rem(12);
+    }
+  }
+}

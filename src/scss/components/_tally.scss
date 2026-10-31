@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+
+// Year-by-year figures with a total row
+.tally {
+  padding: rem(24);
+  border: 1px solid var(--theme-border);
+  border-top: 4px solid var(--theme-dark);
+  background-color: var(--theme-surface);
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding-block: rem(10);
+      border-bottom: 1px solid var(--theme-border);
+      font-family: $font-heading;
+      font-size: rem(24);
+      font-weight: 700;
+    }
+
+    th {
+      text-align: left;
+      color: var(--theme-muted);
+    }
+
+    td {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    tfoot th,
+    tfoot td {
+      border-top: 3px solid var(--theme-accent);
+      border-bottom: none;
+      font-size: clamp(rem(32), 5vw, rem(44));
+      text-transform: uppercase;
+      color: var(--theme-accent);
+    }
+  }
+
+  &__caption {
+    margin-bottom: rem(8);
+    font-size: rem(15);
+    font-weight: 600;
+    text-align: left;
+    color: var(--theme-muted);
+  }
+
+  &__source {
+    margin-top: rem(16);
+    font-size: rem(14);
+    color: var(--theme-muted);
+
+    a {
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+  }
+}

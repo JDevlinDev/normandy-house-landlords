@@ -1,0 +1,6 @@
+@use "sass:math";
+
+// Convert design pixels to rem: rem(24) => 1.5rem
+@function rem($px, $base: 16) {
+  @return math.div($px, $base) * 1rem;
+}

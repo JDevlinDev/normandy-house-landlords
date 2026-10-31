@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.container {
+  width: min(100% - rem(32), $max-width);
+  margin-inline: auto;
+}
+
+// Hidden until focused, for keyboard users
+.skip-link {
+  position: absolute;
+  top: rem(8);
+  left: rem(8);
+  z-index: 100;
+  padding: rem(8) rem(16);
+  background-color: var(--theme-highlight);
+  font-weight: 700;
+  color: var(--theme-dark);
+  transform: translateY(-200%);
+
+  &:focus {
+    transform: none;
+  }
+}

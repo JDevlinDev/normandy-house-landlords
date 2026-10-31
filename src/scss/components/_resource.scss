@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+// Agency or legal-aid listing; the whole card is the link
+.resource {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
+  height: 100%;
+  padding: rem(24);
+  border: 1px solid var(--theme-border);
+  border-left: 4px solid var(--theme-accent);
+  background-color: var(--theme-surface);
+  transition: border-color 0.15s;
+
+  &:hover {
+    border-color: var(--theme-accent);
+  }
+
+  &__for {
+    font-size: rem(13);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--theme-accent);
+  }
+
+  &__name {
+    font-size: rem(22);
+  }
+
+  &__phone {
+    font-weight: 700;
+  }
+
+  &__url {
+    margin-top: auto;
+    font-size: rem(15);
+    font-weight: 600;
+    color: var(--theme-muted);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    overflow-wrap: anywhere;
+  }
+}

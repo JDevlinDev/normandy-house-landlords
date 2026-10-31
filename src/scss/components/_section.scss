@@ -1,0 +1,74 @@
+@use "../abstracts" as *;
+
+.section {
+  padding-block: rem(64);
+
+  @include breakpoints("md") {
+    padding-block: rem(96);
+  }
+
+  &--alt {
+    background-color: var(--theme-surface-alt);
+  }
+
+  &--dark {
+    background-color: var(--theme-dark);
+    color: var(--theme-on-dark);
+  }
+
+  &__header {
+    max-width: 44rem;
+    margin-bottom: rem(40);
+  }
+
+  &__eyebrow {
+    margin-bottom: rem(12);
+    font-family: $font-heading;
+    font-size: rem(15);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--theme-accent);
+  }
+
+  &--dark &__eyebrow {
+    color: var(--theme-highlight);
+  }
+
+  &__title {
+    margin-bottom: rem(16);
+    font-size: clamp(rem(34), 5vw, rem(52));
+    text-transform: uppercase;
+  }
+
+  &--dark &__title {
+    color: var(--theme-on-dark-heading);
+  }
+
+  &__lead {
+    font-size: rem(19);
+  }
+
+  &__subtitle {
+    margin-block: rem(48) rem(20);
+    font-size: rem(26);
+    text-transform: uppercase;
+  }
+
+  // Source line under a section's content
+  &__note {
+    max-width: 44rem;
+    margin-top: rem(32);
+    font-size: rem(15);
+
+    a {
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+  }
+
+  &--dark &__note a:hover {
+    color: var(--theme-highlight);
+  }
+}

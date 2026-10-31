@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+.doc-list {
+  border-top: 2px solid var(--theme-dark);
+
+  &__item {
+    display: grid;
+    gap: rem(4) rem(24);
+    padding-block: rem(16);
+    border-bottom: 1px solid var(--theme-border);
+
+    @include breakpoints("md") {
+      grid-template-columns: 1fr auto;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__meta {
+    font-size: rem(15);
+    color: var(--theme-muted);
+  }
+
+  &__link {
+    grid-row: span 2;
+    justify-self: start;
+    font-weight: 700;
+    color: var(--theme-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      color: var(--theme-accent-strong);
+    }
+  }
+}

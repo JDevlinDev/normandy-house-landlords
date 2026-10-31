@@ -1,0 +1,59 @@
+@use "../abstracts" as *;
+
+// Key Form 990 line items, in the hero
+.ledger {
+  max-width: 44rem;
+  padding: rem(24);
+  border: 1px solid var(--theme-border);
+  border-top: 6px solid var(--theme-accent);
+  border-radius: rem(4);
+  background-color: var(--theme-surface);
+  color: var(--theme-text);
+
+  @include breakpoints("md") {
+    padding: rem(32);
+  }
+
+  &__title {
+    margin-bottom: rem(4);
+    font-size: rem(26);
+    text-transform: uppercase;
+  }
+
+  &__meta {
+    margin-bottom: rem(16);
+    font-size: rem(15);
+    color: var(--theme-muted);
+  }
+
+  &__row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: rem(16);
+    padding-block: rem(12);
+    border-bottom: 1px solid var(--theme-border);
+  }
+
+  &__value {
+    flex-shrink: 0;
+    font-family: $font-heading;
+    font-size: rem(28);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--theme-accent);
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: rem(16);
+    font-weight: 700;
+    color: var(--theme-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      color: var(--theme-accent-strong);
+    }
+  }
+}

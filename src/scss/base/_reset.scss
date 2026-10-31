@@ -1,0 +1,70 @@
+/* This is a standard CSS Reset with some of my own preferences */
+
+/* Box sizing border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles (bullets/numbers) */
+ul,
+ol,
+menu,
+* li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+  - Remove default hyperlink styles
+  - Inherit font styles for consistency
+*/
+a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+/* 
+  - Remove default outline styles 
+  - Inherit font styles for consistency
+*/
+button,
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+/* Set the default button behavior */
+button {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+}

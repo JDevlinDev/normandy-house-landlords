@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: rem(28) rem(24);
+  border: 1px solid var(--theme-border);
+  border-top: 4px solid var(--theme-dark);
+  background-color: var(--theme-surface);
+
+  &__number {
+    margin-bottom: rem(8);
+    font-family: $font-heading;
+    font-size: rem(40);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--theme-accent);
+  }
+
+  &__title {
+    margin-bottom: rem(12);
+    font-size: rem(24);
+  }
+
+  &__cite {
+    margin-top: auto;
+    padding-top: rem(16);
+    font-size: rem(14);
+    font-weight: 600;
+    color: var(--theme-muted);
+  }
+}

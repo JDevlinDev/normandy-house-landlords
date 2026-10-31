@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+:root {
+  color-scheme: light;
+
+  // Turn every color in $palette into a CSS custom property: --color-navy-950, ...
+  @each $name, $color in $palette {
+    --color-#{$name}: #{$color};
+  }
+
+  // Semantic tokens: components use these, so a new theme only remaps this list
+  --theme-bg: var(--color-paper-50);
+  --theme-surface: var(--color-white);
+  --theme-surface-alt: var(--color-paper-100);
+  --theme-border: var(--color-paper-300);
+  --theme-heading: var(--color-navy-950);
+  --theme-text: var(--color-navy-900);
+  --theme-muted: var(--color-ink-600);
+  --theme-accent: var(--color-red-600);
+  --theme-accent-strong: var(--color-red-700);
+  --theme-highlight: var(--color-gold-400);
+  --theme-dark: var(--color-navy-950);
+  --theme-dark-raised: var(--color-navy-900);
+  --theme-dark-border: var(--color-navy-700);
+  --theme-on-dark: var(--color-navy-300);
+  --theme-on-dark-heading: var(--color-white);
+}

@@ -1,0 +1,116 @@
+@use "../abstracts" as *;
+
+.case-file {
+  padding: rem(28) rem(20);
+  border: 1px solid var(--theme-border);
+  background-color: var(--theme-surface);
+
+  @include breakpoints("md") {
+    padding: rem(48);
+  }
+
+  & + & {
+    margin-top: rem(32);
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: rem(12);
+    padding: rem(2) rem(10);
+    border: 2px solid var(--theme-accent);
+    font-family: $font-heading;
+    font-size: rem(14);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--theme-accent);
+  }
+
+  &__title {
+    margin-bottom: rem(8);
+    font-size: clamp(rem(28), 4vw, rem(40));
+  }
+
+  &__meta {
+    margin-bottom: rem(28);
+    color: var(--theme-muted);
+  }
+
+  &__stats {
+    display: grid;
+    gap: rem(12);
+    margin-bottom: rem(32);
+
+    @include breakpoints("md") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__stat {
+    padding: rem(16) rem(20);
+    background-color: var(--theme-dark);
+    font-size: rem(15);
+    color: var(--theme-on-dark);
+  }
+
+  &__figure-num {
+    display: block;
+    font-family: $font-heading;
+    font-size: rem(40);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--theme-highlight);
+  }
+
+  &__body {
+    display: grid;
+    gap: rem(32);
+    align-items: start;
+
+    @include breakpoints("lg") {
+      grid-template-columns: 1.5fr 1fr;
+      gap: rem(48);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: rem(16);
+    font-size: rem(22);
+    text-transform: uppercase;
+  }
+
+  &__points {
+    display: grid;
+    gap: rem(14);
+  }
+
+  &__point {
+    position: relative;
+    padding-left: rem(24);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.6em;
+      left: 0;
+      width: rem(10);
+      height: rem(10);
+      background-color: var(--theme-accent);
+    }
+  }
+
+  &__parties {
+    margin-top: rem(24);
+    padding-top: rem(16);
+    border-top: 1px solid var(--theme-border);
+    font-size: rem(15);
+    color: var(--theme-muted);
+  }
+
+  &__docs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(8);
+    margin-top: rem(28);
+  }
+}

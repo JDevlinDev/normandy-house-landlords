@@ -1,0 +1,22 @@
+// Sass variables and maps (colors, font stacks, spacing scales)
+
+// Legal-aid navy and paper, with a protest-sign red and a caution gold
+$palette: (
+  "navy-950": hsl(222, 47%, 11%),
+  "navy-900": hsl(222, 44%, 15%),
+  "navy-700": hsl(222, 30%, 28%),
+  "navy-300": hsl(222, 25%, 78%),
+  "paper-50": hsl(40, 33%, 97%),
+  "paper-100": hsl(40, 28%, 92%),
+  "paper-300": hsl(40, 14%, 80%),
+  "ink-600": hsl(222, 12%, 36%),
+  "red-600": hsl(4, 74%, 44%),
+  "red-700": hsl(4, 74%, 36%),
+  "gold-400": hsl(43, 92%, 56%),
+  "white": hsl(0, 0%, 100%),
+);
+
+// Both SIL Open Font License
+$font-body: "Public Sans", sans-serif;
+$font-heading: "Oswald", sans-serif;
+$max-width: 72rem;

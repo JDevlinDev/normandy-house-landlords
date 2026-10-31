@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+// Sourced claims, each ending in a linked citation
+.points {
+  display: grid;
+  gap: rem(28);
+
+  &__item {
+    position: relative;
+    padding-left: rem(24);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.45em;
+      left: 0;
+      width: rem(10);
+      height: rem(10);
+      background-color: var(--theme-accent);
+    }
+
+    a {
+      font-size: rem(15);
+      font-weight: 600;
+      color: var(--theme-muted);
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+
+      &:hover {
+        color: var(--theme-accent);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(6);
+    font-size: rem(22);
+  }
+}

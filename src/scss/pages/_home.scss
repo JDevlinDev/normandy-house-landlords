@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+// Card grid used by the rights and help sections
+.grid {
+  display: grid;
+  gap: rem(20);
+
+  @include breakpoints("md") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoints("lg") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Figure beside its explanation, in the money section
+.split {
+  display: grid;
+  gap: rem(40);
+  align-items: start;
+
+  @include breakpoints("lg") {
+    grid-template-columns: 1fr 1.3fr;
+    gap: rem(56);
+  }
+}
