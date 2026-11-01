@@ -31,7 +31,8 @@ The site's message follows the 2026-10-31 press release: Normandy House's own Fo
 ## Scripts
 
 - `npm start`: Parcel dev server on port 4321. Writes to `dist-dev/`, never `dist/`.
-- `npm run build`: clean production build in `dist/` with relative paths (`--public-url ./`), then copies `src/static/` into `dist/` unprocessed. Files that need a fixed absolute URL, like the link-preview image `og-image.png`, go in `src/static/`.
+- `npm run check`: `html-validate` over `src/` (standard, a11y and document rules; config in `.htmlvalidate.json`), then `scripts/check-links.mjs`, which fails on any `#anchor` without a matching id or relative link to a missing file. Runs at the start of every build, so a broken page can't deploy.
+- `npm run build`: runs `check`, then a clean production build in `dist/` with relative paths (`--public-url ./`), then copies `src/static/` into `dist/` unprocessed. Files that need a fixed absolute URL, like the link-preview image `og-image.png`, go in `src/static/`.
 - `npm run push-gh`: builds, then publishes `dist/` to the `gh-pages` branch with a `CNAME` for www.normandyhouselandlords.org (gh-pages replaces the branch each deploy, so the CNAME must come from the script). Requires the `origin` remote to use SSH (it does).
 - `package-lock.json` is committed; install with `npm ci`. Check new install scripts before approving them with `npm approve-scripts <pkg>`.
 - `gh` isn't installed. Use `git` or the GitHub web UI for repo settings.
