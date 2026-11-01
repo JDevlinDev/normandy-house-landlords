@@ -7,7 +7,6 @@
     "start": "npx parcel --host 0.0.0.0 --port 4321 --dist-dir dist-dev",
     "build": "npm run cleanup && npx parcel build --public-url ./ && cp -r src/static/. dist/",
     "push-gh": "npm run build && gh-pages --dist dist --branch gh-pages --cname www.normandyhouselandlords.org --nojekyll --message \"Deploy $(git rev-parse --short HEAD)\"",
-    "format": "prettier --write src",
     "cleanup": "rm -rf dist dist-dev .parcel-cache"
   },
   "keywords": [
@@ -24,7 +23,6 @@
     "@parcel/transformer-sass": "^2.16.4",
     "gh-pages": "^6.3.0",
     "parcel": "^2.16.4",
-    "prettier": "^3.8.4",
     "svgo": "^3.3.5"
   },
   "allowScripts": {
