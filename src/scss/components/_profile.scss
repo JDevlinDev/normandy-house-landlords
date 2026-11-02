@@ -33,15 +33,8 @@
     font-weight: 600;
   }
 
-  &__facts {
-    display: grid;
-    gap: rem(12);
+  &__body {
     margin-bottom: rem(24);
-  }
-
-  &__fact {
-    padding-left: rem(16);
-    border-left: 3px solid var(--theme-border);
   }
 
   &__case {
