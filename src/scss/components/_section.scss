@@ -21,20 +21,6 @@
     margin-bottom: rem(40);
   }
 
-  &__eyebrow {
-    margin-bottom: rem(12);
-    font-family: $font-heading;
-    font-size: rem(15);
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--theme-accent);
-  }
-
-  &--dark &__eyebrow {
-    color: var(--theme-highlight);
-  }
-
   &__title {
     margin-bottom: rem(16);
     font-size: clamp(rem(34), 5vw, rem(52));
