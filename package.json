@@ -8,7 +8,7 @@
     "check": "html-validate src && node scripts/check-links.mjs",
     "build": "npm run check && npm run cleanup && npx parcel build --public-url ./ && cp -r src/static/. dist/",
     "push-gh": "npm run build && gh-pages --dist dist --branch gh-pages --cname www.normandyhouselandlords.org --nojekyll --message \"Deploy $(git rev-parse --short HEAD)\"",
-    "cleanup": "rm -rf dist dist-dev .parcel-cache"
+    "cleanup": "rm -rf dist"
   },
   "keywords": [
     "web development",
