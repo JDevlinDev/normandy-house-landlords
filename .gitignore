@@ -6,6 +6,9 @@ dist/
 dist-dev/
 .parcel-cache/
 
+# Screenshots shared with Claude
+claude_screenshots/
+
 # From the starter pack
 .DS_Store
 *.zip
