@@ -14,3 +14,6 @@ claude_screenshots/
 *.zip
 .vscode
 *.code-workspace
+
+# Local Claude settings (machine-specific hooks and paths)
+.claude/settings.local.json
