@@ -1,6 +1,6 @@
 # Project notes for Claude
 
-A public site about the landlords behind Normandy House sober living in Des Plaines, IL, with downloadable public-record filings from *Sherrick v. Normandy House, Inc.* (Cook County Case No. 20262005977). Static HTML + Sass, bundled with Parcel, deployed to GitHub Pages. Built from the Newbie FEM Starter Pack (`~/Projects/web/renters-in-recovery/newbie-fem-starter`).
+A public site about the landlords behind Normandy House sober living in Des Plaines, IL, with downloadable public-record filings from *Sherrick v. Normandy House, Inc.* (Cook County Case No. 20262005977). Static HTML + Sass, bundled with Parcel, deployed to GitHub Pages. Built from the Newbie FEM Starter Pack (`~/Claude/renters-in-recovery/newbie-fem-starter`).
 
 **This repo is public.** Everything committed here, including this file, can be read by the defendants. Keep case strategy, personal details and anything unfiled out of it.
 
